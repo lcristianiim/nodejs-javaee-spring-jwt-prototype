@@ -1,0 +1,10 @@
+extends layout
+
+block custom-styles
+  link(rel='stylesheet', href='/stylesheets/header.css')
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  script(src='/javascripts/dist/tokenHandler.bundle.js')

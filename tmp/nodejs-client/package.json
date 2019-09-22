@@ -1,0 +1,31 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www && node_modules/.bin/webpack --watch"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "node-fetch": "^2.3.0",
+    "pug": "2.0.0-beta11",
+    "webpack": "^4.28.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "jwt-simple": "^0.5.5",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0",
+    "supertest": "^3.4.2",
+    "webpack-cli": "^3.2.1"
+  }
+}

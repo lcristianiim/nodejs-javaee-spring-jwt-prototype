@@ -1,0 +1,12 @@
+mixin nav(homeLabel, homeHref, loginLabel, loginHref, profileLabel, profileHref, logoutLabel, logoutHref, signInLabel, signInHref)
+
+  a(href=homeHref)= homeLabel
+  if signInLabel
+    a#signin-nav(href=signInHref)= signInLabel
+  if loginLabel
+    a#login-nav(href=loginHref)= loginLabel
+  if profileLabel
+    a#profile-nav(href=profileHref)= profileLabel
+  if logoutLabel
+    a#logout-nav(href=logoutHref)= logoutLabel
+

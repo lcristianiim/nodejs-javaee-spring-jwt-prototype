@@ -1,0 +1,22 @@
+extends layout
+
+block custom-styles
+    link(rel='stylesheet', href='/stylesheets/header.css')
+
+block content
+    h1= title
+    p this is the #{token}
+    p Welcome to the login page
+    form(id='loginForm' method='POST' action='/login')
+        div.form-group
+            label(for='username') Username:
+            input#username.form-control(type='text', placeholder='username' name='username' required)
+        div.form-group
+            label(for='pw') Password:
+            input#pw.form-control(type='password' placeholder='password' name='password')
+        button.btn.btn-primary(type='submit') Sign up
+
+
+    p #{error}
+    //- script(src='/javascripts/login.js')
+    //script(src='/javascripts/tokenHandler.js')

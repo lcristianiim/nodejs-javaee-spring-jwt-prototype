@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    block custom-styles
+  body
+    nav
+      include includes/header.pug
+      +nav(homeLabel, homeHref, loginLabel, loginHref, profileLabel, profileHref, logoutLabel, logoutHref, signInLabel, signInHref)
+    block content

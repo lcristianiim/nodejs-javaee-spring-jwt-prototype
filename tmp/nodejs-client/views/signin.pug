@@ -1,0 +1,28 @@
+extends layout
+
+block custom-styles
+    link(rel='stylesheet', href='/stylesheets/header.css')
+
+block content
+    h1= title
+    p Welcome to the sign in page
+    form(id='signInForm' method='POST' action='/signin')
+        div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='email' name='email' required)
+        div.form-group
+            label(for='displayName') Display Name:
+            input#displayName.form-control(type='text', placeholder='displayName' name='displayName' required)
+        div.form-group
+            label(for='pw') Password:
+            input#pw.form-control(type='password' placeholder='password' name='password')
+        div.form-group
+            label(for='pw') Confirm password:
+            input#pwconfirm.form-control(type='password' placeholder='confirm password' name='confirmPassword')
+        button.btn.btn-primary(type='submit') Sign up
+
+        p This is the result:
+        p #{result}
+        p #{error}
+    //- script(src='/javascripts/login.js')
+    //script(src='/javascripts/tokenHandler.js')
